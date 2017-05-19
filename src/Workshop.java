@@ -1,14 +1,16 @@
 
 public class Workshop {
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		//System.out.println("Hello.World");
-		Personne unePersonne = new Personne(); 
-		unePersonne.nom = "NERAUD";
-		unePersonne.prenom = "Yohann";
-		//unePersonne.direBonjour(); 
-		
-		System.out.println("Bonjour, je m'appelle " + unePersonne.getNom() + " " + unePersonne.getPrenom());
+		final Personne unePersonne = new Personne();
+		unePersonne.setNom("NERAUD");
+		unePersonne.setPrenom("Yohann");
+		//unePersonne.nom = "NERAUD";
+		//unePersonne.prenom = "Yohann";
+		unePersonne.direBonjour();
+
+		//System.out.println("Bonjour, je m'appelle " + unePersonne.getNom() + " " + unePersonne.getPrenom());
 
 	}
 

@@ -3,22 +3,22 @@ public class Personne {
 
 	public String nom = "";
 	public String prenom = "";
-	
-	/*public void direBonjour(){
+
+	public void direBonjour(){
 		System.out.println("Bonjour, je m'appelle " + this.prenom + " " + this.nom);
-	}*/
-	
-	
-	public String getNom() {
-		 return nom;
 	}
-	public void setNom(String nom) {
-		 this.nom = nom;
+
+
+	public String getNom() {
+		return this.nom;
+	}
+	public void setNom(final String nom) {
+		this.nom = nom;
 	}
 	public String getPrenom() {
-		return prenom;
+		return this.prenom;
 	}
-	public void setPrenom(String prenom) {
+	public void setPrenom(final String prenom) {
 		this.prenom = prenom;
 	}
 
